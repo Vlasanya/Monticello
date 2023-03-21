@@ -1,0 +1,11 @@
+@mixin d-flex($flex-d, $al-items, $j-cont) {
+    display: flex;
+    flex-direction: $flex-d;
+    align-items: $al-items;
+    justify-content: $j-cont;
+}
+@mixin bg($sz, $repeat, $position) {
+    background-size: $sz;
+    background-repeat: $repeat;
+    background-position: $position;
+}

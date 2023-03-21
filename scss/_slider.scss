@@ -1,0 +1,185 @@
+// ----------------------- Default Style -------------
+
+.slick-dots {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    right: 33px;
+    transform: translateY(-50%);
+    flex-direction: column;
+    @media screen and (max-width: 992px) {
+        gap: 13px;
+    }
+
+    li {
+        &.slick-active {
+            button {
+                background-color: #b59c9c;
+                border: 1px solid $main-color-text;
+            }
+        }
+    }
+
+    button {
+        font-size: 0;
+        background: none;
+        border: 1px solid #FFF;
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        border-radius: 50%;
+        // box-shadow: 0 0 6px 0px #4e6a6c;
+        cursor: pointer;
+        @media screen and (max-width: 992px) {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+.slick-list {
+    height: 100vh;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    font-size: 0;
+    border: 1px solid $main-color-text;
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &::before {
+        content: "<";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: $main-color-text;
+    }
+}
+.slick-prev {
+    left: -30px;
+
+}
+.slick-next {
+    left: none;
+    right: -30px;
+
+    &::before {
+        content: ">";
+    }
+}
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    &__content {
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        z-index: 2;
+        width: 100%;
+        & h2 {
+            font-family: $fontfam-main;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4.44rem;
+            line-height: 1.23;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            @media screen and (max-width: 992px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 1.75rem;
+            }
+        }
+        & h4 {
+            line-height: 1.22;
+            letter-spacing: 0.3em;
+            margin-bottom: 100px;
+            @media screen and (max-width: 576px) {
+                font-size: 1rem;
+                margin-bottom: 75px;
+            }
+        }
+    }
+}
+.slider-slide {
+    position: relative;
+    height: 100vh;
+    & img {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.btn-down {
+    position: absolute;
+    // bottom: 10%;
+    left: 45%;
+    border: 1px solid $main-color-text;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    background-image: url(../assets/img/svg/arrow_down.svg);
+    @include bg(70%, no-repeat, center);
+    
+    a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: #b59c9c;
+    }
+}
+
+.slider_cards {
+    max-width: 90%;
+    max-height: 60%;
+    margin-bottom: 170px;
+    
+    .slick-dots {
+        transform: translateX(-50%);
+        flex-direction: row;
+        bottom: -50%;
+        left: 50%;
+        top: 100%;
+        li {
+            &.slick-active {
+                button {
+                    background-color: #b59c9c;
+                }
+            }
+        }
+    
+        button {
+            font-size: 0;
+            background: none;
+            border: 1px solid $main-color-text;
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            border-radius: 50%;
+            // box-shadow: 0 0 6px 0px #4e6a6c;
+            cursor: pointer;
+        }
+    }
+    .card {
+        margin: 30px;
+    }
+}

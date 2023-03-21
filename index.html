@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTICELLO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./js/maps_api.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu menu">
+                <div class="menu__logo">
+                    <img src="./assets/img/svg/Logo.svg" alt="Logo">
+                </div>
+                <div class="menu__list-wrapper">
+                    <ul class="menu__links" id="burger">
+                        <li class="menu__item">
+                            <a href="#what_we_do" class="menu__link">ABOUT US</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects" class="menu__link">PROJECTS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#news" class="menu__link">NEWS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">CONTACT</a>
+                        </li>
+                        <li class="menu__item icon">
+                            <a href="javascript:void(0);" onclick="burgerMenu()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <ul class="menu__social">
+                    <li class="social__item twitter">
+                        <a href="" class="social__link"></a>
+                    </li>
+                    <li class="social__item facebook">
+                        <a href="" class="social__link"></a>
+                    </li>
+                    <li class="social__item instagram">
+                        <a href="" class="social__link"></a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider">
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h2 class="sl-content__title">SIMPLE & MODERN</h2>
+                    <h4 class="sl-content__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                    <button class="btn-down">
+                        <a href="#what_we_do"></a>
+                    </button>
+                </div>
+                <img src="./assets/img/a1.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                
+                <div class="slider__content sl-content">
+                    <h2 class="sl-content__title">EASY & COMFORTABLE</h2>
+                    <h4 class="sl-content__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                    <button class="btn-down">
+                        <a href="#what_we_do"></a>
+                    </button>
+                </div>
+                <img src="./assets/img/a2.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                
+                <div class="slider__content sl-content">
+                    <h2 class="sl-content__title">SMART & FASHIONABLY</h2>
+                    <h4 class="sl-content__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                    <button class="btn-down">
+                        <a href="#what_we_do"></a>
+                    </button>
+                </div>
+                <img src="./assets/img/a3.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h2 class="sl-content__title">SIMPLE & MODERN</h2>
+                    <h4 class="sl-content__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                    <button class="btn-down">
+                        <a href="#what_we_do"></a>
+                    </button>
+                </div>
+                
+                <img src="./assets/img/a4.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h2 class="sl-content__title">RELIABLY & QUICKLY</h2>
+                    <h4 class="sl-content__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                    <button class="btn-down">
+                        <a href="#what_we_do"></a>
+                    </button>
+                </div>
+                
+                <img src="./assets/img/a5.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h2 class="sl-content__title">SMART & FASHIONABLY</h2>
+                    <h4 class="sl-content__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                    <button class="btn-down">
+                        <a href="#what_we_do"></a>
+                    </button>
+                </div>
+                
+                <img src="./assets/img/a6.webp" alt="" class="slider-slide__img">
+            </div>
+        </section>
+    <section class="sections container" id="what_we_do">
+        <div class="title-wrapper">
+            <h2 class="title">WHAT WE DO</h2>
+        </div>
+        
+        <article class="article">
+            <img src="./assets/img/1.20.webp" alt="1.20">
+            <div class="article__text">
+                <h3>ONE WORLD</h3>
+                <h2>TRADE CENTER</h2>
+                <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. <span class="dots">...</span><span class="more">truth is, our thoughts are very powerful. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed error, veritatis velit reiciendis totam mollitia sint ab perspiciatis molestiae quo doloremque ipsam animi esse amet maxime incidunt? Impedit, harum?</span> </p>
+                <button class="btns btn-text more_details"  onclick="readMore()">MORE DETAILS</button>
+                <br>
+                <a href="">New York City, United States - 1776 feet </a>
+            </div>
+            
+        
+        </article>
+        <article class="article article-reverse">
+            <img src="./assets/img/1.21.webp" alt="1.21" class="img img_reverse">
+            <div class="article__text">
+                <h3>INTERNATIONAL</h3>
+                <h2>COMMERCE CENTRE</h2>
+                <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.<span class="dots-2">...</span><span class="more-2">truth is, our thoughts are very powerful. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed error, veritatis velit reiciendis totam mollitia sint ab perspiciatis molestiae quo doloremque ipsam animi esse amet maxime incidunt? Impedit, harum?</span></p>
+                <button class="btns btn-text more_details-2" onclick="readMore2()">MORE DETAILS</button>
+                <br>
+                <a href="">Hong Kong - 1588 feet</a>
+            </div>
+       
+        </article>
+        
+    </section>
+    <section class="sections  news" id="news">
+        <div class="container">
+            <div class="title-wrapper_news">
+                <h2 class="title_news">LATEST NEWS</h2>
+            </div>
+            <div class="slider_cards">
+                <div class="card">
+                    <img src="./assets/img/1.13.webp" alt="" class="card_img">
+                    <div class="text-wrapper">
+                        <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p>Free directories: are perfect for customers that are searching for...</p>
+                        <div class="user">
+                            <img src="./assets/img/user1.png" alt="" class="user_photo">
+                            <div>
+                                <h5 class="user_name">ALJA BRUN</h4>
+                                <p class="user_date">20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/1.12.webp" alt="" class="card_img">
+                    <div class="text-wrapper">
+                        <h4>EFFECTIVE ADVERTISING POINTERS.</h4>
+                        <p>Having a home based business is a wonderful asset to your life...</p>
+                        <div class="user">
+                            <img src="./assets/img/user2.png" alt="" class="user_photo">
+                            <div>
+                                <h5 class="user_name">DOMINIC FREEMAN</h4>
+                                <p class="user_date">18 Mar 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/2.2.webp" alt="" class="card_img">
+                    <div class="text-wrapper">
+                        <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                        <p>There are many things that are important to catalog design...</p>
+                        <div class="user">
+                            <img src="./assets/img/user3.png" alt="" class="user_photo">
+                            <div>
+                                <h5 class="user_name">ALEX MOOD</h4>
+                                <p class="user_date">13 Dec 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/3.4.webp" alt="" class="card_img">
+                    <div class="text-wrapper">
+                        <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p>Free directories: are perfect for customers that are searching for...</p>
+                        <div class="user">
+                            <img src="./assets/img/user1.png" alt="" class="user_photo">
+                            <div>
+                                <h5 class="user_name">ALICE WARD</h4>
+                                <p class="user_date">20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/3.5.webp" alt="" class="card_img">
+                    <div class="text-wrapper">
+                        <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                        <p>There are many things that are important to catalog design...</p>
+                        <div class="user">
+                            <img src="./assets/img/user2.png" alt="" class="user_photo">
+                            <div>
+                                <h5 class="user_name">ANNA KOMAROVA</h4>
+                                <p class="user_date">30 Nov 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section class="sections gallery" id="projects">
+        <div class="container">
+            <div class="title-wrapper_gallery">
+                <h2 class="title_gallery">GALLERY</h2>
+            </div>
+            <!-- The grid: four columns -->
+            <div class="row">
+                <div class="column row-item">
+                <img src="./assets/img/4.1.webp" alt="Photo by: Anna Komarova" onclick="showGallery(this);">
+                </div>
+                <div class="column">
+                <img src="./assets/img/1.23.webp" alt="Photo by: Anna Komarova" onclick="showGallery(this);">
+                </div>
+                <div class="column">
+                <img src="./assets/img/4.2.webp" alt="Photo by: Anna Komarova" onclick="showGallery(this);">
+                </div>
+                <div class="column">
+                <img src="./assets/img/4.3.webp" alt="Photo by: Anna Komarova" onclick="showGallery(this);">
+                </div>
+                <div class="column">
+                    <img src="./assets/img/3.7.webp" alt="Photo by: Anna Komarova" onclick="showGallery(this);">
+                    </div>
+            </div>
+            
+            <!-- The expanding image container -->
+            <div class="gallery-container">
+                <button onclick="" class="prevbtn gal-arrow"></button>
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+                <!-- Expanded image -->
+                <img id="expandedImg"  class="expandedImg" >
+            
+                <!-- Image text -->
+                <div id="imgtext"></div>
+                <button onclick="" class="nextbtn gal-arrow"></button>
+            </div>
+            <button class="gallery__btn btns">SEE MORE</button>
+        </div>
+    </section>
+    <section class="sections map" id="map">
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <div class="footer_form-wrapper">
+                    <div class="title-wrapper_footer">
+                        <h2 class="title_footer">GET IN TOUCH</h2>
+                    </div>
+                    <div class="data">
+                        <div class="our_contacts">
+                            <a href="https://goo.gl/maps/CvXaAd65BP1RRJgB7" class="location">91 Nolan Extensions Suite 670</a>
+                            <a href="tel:+001 356-868-2454" class="call">+001 356-868-2454</a>
+                            <a href="mailto:montichello@service.com " class="mail">montichello@service.com </a>
+                            <p class="clock">From 07:05AM to 19:30PM</p>
+                        </div>
+                        <form action="#" class="contact__form">
+                            <input type="text" id="fname" name="fname" placeholder="Your name" required class="form__input">
+            
+                            <input type="email" id="email" name="email" placeholder="Email" required class="form__input">
+                    
+                            <button class="btns btn-form">SUBMIT</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="wrapper">
+                    <div class="footer-menu_wrapper" id="contacts">
+                        <div class="menu__logo">
+                            <img src="./assets/img/svg/Logo.svg" alt="Logo">
+                        </div>
+                        <ul class="menu__social">
+                            <li class="social__item twitter">
+                                <a href="" class="social__link"></a>
+                            </li>
+                            <li class="social__item facebook">
+                                <a href="" class="social__link"></a>
+                            </li>
+                            <li class="social__item instagram">
+                                <a href="" class="social__link"></a>
+                            </li>   
+                        </ul>
+                    </div>
+                    <p>Copyrights © 2020 Montichello</p>
+                    
+                </div>
+                
+        </div>
+       
+    
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX_BbjYJD3GR-ePiGusitHGe5-QO-uijw&callback=initMap"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
