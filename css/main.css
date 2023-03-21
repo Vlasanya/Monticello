@@ -377,10 +377,6 @@ template {
   }
 }
 
-.slick-list {
-  height: 100vh;
-}
-
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -478,6 +474,8 @@ template {
 
 .btn-down {
   position: absolute;
+  display: inline-block;
+  text-decoration: none;
   left: 45%;
   border: 1px solid #521f1f;
   border-radius: 50%;
@@ -1171,14 +1169,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.nextbtn #imgtext {
+
+#imgtext {
   position: absolute;
   bottom: 15px;
   left: 15px;
   color: #ffffff;
   font-size: 20px;
 }
-.nextbtn .closebtn {
+
+.closebtn {
   position: absolute;
   top: 100px;
   right: 15px;
@@ -1186,11 +1186,13 @@ body {
   font-size: 70px;
   cursor: pointer;
 }
-.nextbtn .expandedImg {
+
+.expandedImg {
   max-height: 100%;
   max-width: 65%;
 }
-.nextbtn .footer {
+
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1204,11 +1206,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.nextbtn .footer__menu {
+.footer__menu {
   width: 770px;
   position: relative;
 }
-.nextbtn .footer__menu .footer_form-wrapper {
+.footer__menu .footer_form-wrapper {
   background-color: #b59c9c;
   position: absolute;
   top: -500px;
@@ -1218,11 +1220,11 @@ body {
   padding: 40px;
 }
 @media screen and (max-width: 768px) {
-  .nextbtn .footer__menu .footer_form-wrapper {
+  .footer__menu .footer_form-wrapper {
     padding: 20px;
   }
 }
-.nextbtn .footer__menu .title-wrapper_footer {
+.footer__menu .title-wrapper_footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1230,7 +1232,7 @@ body {
   position: relative;
   margin-bottom: 40px;
 }
-.nextbtn .footer__menu .title-wrapper_footer .title_footer {
+.footer__menu .title-wrapper_footer .title_footer {
   padding-top: 30px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1240,7 +1242,7 @@ body {
   text-align: center;
   color: #521f1f;
 }
-.nextbtn .footer__menu .title-wrapper_footer ::before {
+.footer__menu .title-wrapper_footer ::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -1248,7 +1250,7 @@ body {
   left: 43%;
   top: 0;
 }
-.nextbtn .footer-menu_wrapper {
+.footer-menu_wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1258,11 +1260,12 @@ body {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
-  .nextbtn .footer-menu_wrapper {
+  .footer-menu_wrapper {
     margin-bottom: 20px;
   }
 }
-.nextbtn .wrapper {
+
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1272,37 +1275,38 @@ body {
   max-width: 770px;
 }
 @media screen and (max-width: 992px) {
-  .nextbtn .wrapper {
+  .wrapper {
     padding: 0 15px;
   }
 }
-.nextbtn .data {
+
+.data {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .nextbtn .data {
+  .data {
     flex-direction: column;
     gap: 15px;
   }
 }
-.nextbtn .data .our_contacts {
+.data .our_contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
 }
-.nextbtn .data .our_contacts a {
+.data .our_contacts a {
   text-decoration: none;
   color: #521f1f;
 }
-.nextbtn .data .our_contacts .call {
+.data .our_contacts .call {
   position: relative;
 }
-.nextbtn .data .our_contacts .call::before {
+.data .our_contacts .call::before {
   content: "";
   width: 21px;
   height: 21px;
@@ -1315,10 +1319,10 @@ body {
   background-position: center;
   position: absolute;
 }
-.nextbtn .data .our_contacts .location {
+.data .our_contacts .location {
   position: relative;
 }
-.nextbtn .data .our_contacts .location::before {
+.data .our_contacts .location::before {
   content: "";
   width: 21px;
   height: 21px;
@@ -1331,10 +1335,10 @@ body {
   left: -25px;
   bottom: 0;
 }
-.nextbtn .data .our_contacts .mail {
+.data .our_contacts .mail {
   position: relative;
 }
-.nextbtn .data .our_contacts .mail::before {
+.data .our_contacts .mail::before {
   content: "";
   width: 21px;
   height: 21px;
@@ -1347,10 +1351,10 @@ body {
   left: -25px;
   bottom: 0;
 }
-.nextbtn .data .our_contacts .clock {
+.data .our_contacts .clock {
   position: relative;
 }
-.nextbtn .data .our_contacts .clock::before {
+.data .our_contacts .clock::before {
   content: "";
   width: 21px;
   height: 21px;
@@ -1363,14 +1367,15 @@ body {
   background-position: center;
   position: absolute;
 }
-.nextbtn .contact__form {
+
+.contact__form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
   width: 60%;
 }
-.nextbtn .contact__form .form__input {
+.contact__form .form__input {
   display: block;
   width: 100%;
   border: none;
@@ -1388,7 +1393,7 @@ body {
   padding-bottom: 12px;
 }
 @media screen and (max-width: 768px) {
-  .nextbtn .contact__form {
+  .contact__form {
     align-items: center;
   }
 }

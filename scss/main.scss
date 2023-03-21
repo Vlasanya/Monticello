@@ -568,6 +568,7 @@ body {
     right: 50px;
     background-image: url(../assets/img/svg/next.svg);
     @include bg(100%, no-repeat, center);
+}
 #imgtext {
     position: absolute;
     bottom: 15px;
@@ -749,4 +750,4 @@ body {
     @media screen and (max-width: 768px){
         align-items: center;
     }
-}}
+}
