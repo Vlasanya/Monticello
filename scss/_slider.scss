@@ -32,7 +32,6 @@
         height: 16px;
         padding: 0;
         border-radius: 50%;
-        // box-shadow: 0 0 6px 0px #4e6a6c;
         cursor: pointer;
         @media screen and (max-width: 992px) {
             width: 10px;
@@ -40,9 +39,6 @@
         }
     }
 }
-// .slick-list {
-//     height: 100vh;
-// }
 .slick-arrow {
     position: absolute;
     top: 50%;

@@ -267,7 +267,7 @@ body {
         &__text {
             h3 {
                 font-family: $fontfam-main;
-                font-size: 1.22;
+                font-size: 1.22rem;
                 line-height: 1.23;
                 color: $main-color-text;
             }
@@ -359,10 +359,10 @@ body {
 .news {
     @include d-flex(row, center,center);
     background: url(../assets/img/1.12.webp);
-    @include bg(100%, no-repeat, center);
+    @include bg(cover, no-repeat, center);
     width: 100%;
-    margin-bottom: 150px;
-    padding-top: 120px;
+    margin-bottom: 100px;
+    padding-top: 20px;
     .title-wrapper_news {
         position: relative;
         margin-top: 25px;
@@ -406,7 +406,7 @@ body {
             h4 {
                 font-family: $fontfam-main;
                 font-weight: 700;
-                font-size: 1.22;
+                font-size: 1.22rem;
                 line-height: 1.23;
                 color: $main-color-text;
                 margin-bottom: 15px;
@@ -477,6 +477,12 @@ body {
         @include d-flex(column, center, normal);
         position: relative;
         margin-bottom: 90px;
+        @media screen and (max-width: 1200px){
+            margin-bottom: 75px;
+        }
+        @media screen and (max-width: 768px){
+            margin-bottom: 50px;
+        }
         .title_gallery {
             padding-top: 30px;
             font-family: $fontfam-main;
@@ -501,42 +507,44 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto;
     gap: 10px;
+    padding-right: 10px;
     &-item {
         grid-row-start: 1;
         grid-row-end: 3;
     }
     margin-bottom: 100px;
+    @media screen and (max-width: 992px){
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        &-item {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
 }
 .column {
+    position: relative;
     width: 100%;
     height: 100%;
 }
-  
-  /* Style the images inside the grid */
 .column img {
     opacity: 0.8;
     cursor: pointer;
     width: 100%;
-    // max-width: 580px;
-    min-height: 214px;
-    max-height: 440px;
     height: 100%;
 }
-  
 .column img:hover {
     opacity: 1;
 }
-  
-  /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
+}  
 .gallery-container {
     display: none;
     width: 100vw;
@@ -595,9 +603,10 @@ body {
     height: 100%;
     min-height: 550px;
     padding-top: 300px;
-    @include bg(100%, no-repeat, center);
+    @include bg(cover, no-repeat, center);
     &__menu {
-        width: 770px;
+        width: 100%;
+        max-width: 770px;
         position: relative;
         .footer_form-wrapper {
             background-color: #b59c9c;
@@ -607,9 +616,11 @@ body {
             width: 100%;
             max-width: 80%;
             padding: 40px;
-            @media screen and (max-width: 768px){
-                padding: 20px;
-            }
+            overflow: hidden;
+            @media screen and (max-width: 1200px){
+                padding: 20px 20px 20px 40px;
+                top: -510px;
+            } 
         }
         .title-wrapper_footer {
             @include d-flex(column, center, normal);
@@ -625,6 +636,13 @@ body {
                 line-height: 1.22;
                 text-align: center;
                 color: $main-color-text;
+                @media screen and (max-width: 1200px){
+                    font-size: 2rem;
+                    padding-top: 10px;
+                }
+                @media screen and (max-width: 992px){
+                    font-size: 1.5rem;
+                }  
             }
             & ::before{
                 content: '';
@@ -635,7 +653,7 @@ body {
                 top: 0;
             }
         }
-    }
+    }    
     &-menu_wrapper {
         @include d-flex(row, center,  space-between);
         width: 100%;

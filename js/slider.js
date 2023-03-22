@@ -5,31 +5,29 @@ $(document).ready(function(){
     autoplay: true,
     autoplayspeed:4000,
     speed:1500,
-    // slideToScroll: 
-
-    
-    // fade: false,
+    fade: false,
     pauseOnHover: true,
     vertical: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1200,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       dots: true,
-    //       arrows: false,
-    //       fade: false,
-    //       swipe: true,
-    //     }
-    //   },
-    //   {  breakpoint: 992,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       dots: true,
-    //       arrows: false,
-    //       fade: false,
-    //     }}
-    // ]
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+          fade: false,
+          swipe: true,
+        }
+      },
+      {  breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+          fade: false,
+          swipe: true,
+        }}
+    ]
   });
 
 //------------------->>
